@@ -1,0 +1,24 @@
+.rsvpBox{
+    text-align: center;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: -15px;
+}
+
+.navEvent{
+    width: 100%;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.picture{
+    width: 500px;
+    height: 300px;
+    background-color: lightgray;
+    color: gray;
+}

@@ -10,13 +10,10 @@ export const Demo = () => {
 
 	return (
 		<div className="container">
-			<ul className="list-group">
+			<ul>
 				{store.demo.map((item, index) => {
 					return (
-						<li
-							key={index}
-							className="list-group-item d-flex justify-content-between"
-							style={{ background: item.background }}>
+						<li key={index} className="justify-content-between" style={{ background: item.background }}>
 							<Link to={"/single/" + index}>
 								<span>Link to: {item.title}</span>
 							</Link>
