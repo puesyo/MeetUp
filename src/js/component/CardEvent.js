@@ -30,7 +30,10 @@ export const CardEvent = props => {
 										<span>{eventTitle}</span>
 									</Link>
 								</h5>
-								<p className="card-text">Group: {group.group_title}</p>
+								{/* <p className="card-text">Group: {group.group_title}</p> */}
+								<Link to={"/GroupDetail/" + id}>
+									<p>{group.group_title}</p>
+								</Link>
 							</div>
 						</div>
 					</div>

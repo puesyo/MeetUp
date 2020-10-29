@@ -33,8 +33,8 @@ export const EventDetail = () => {
 							</button>
 						</div>
 						<div>
-							<i className="fab fa-twitter"></i>
-							<i className="fab fa-facebook-square"></i>
+							<i className="fab fa-twitter" />
+							<i className="fab fa-facebook-square" />
 						</div>
 					</div>
 				</div>
@@ -51,7 +51,7 @@ export const EventDetail = () => {
 					<div className="col-2" style={{ border: "1px solid gray", height: "150px" }}>
 						<div className="row">
 							<div className="col-1">
-								<i className="fas fa-clock"></i>
+								<i className="fas fa-clock" />
 							</div>
 							<div className="col">
 								<ul>
