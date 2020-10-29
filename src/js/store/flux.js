@@ -23,7 +23,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					meta_keys: {
 						day: "October 31 2020",
 						time: "12:00 pm",
-						_groupId: 7,
+						_groupId: 9,
 						_rsvpNo: ["Jhon", "Carla", "Michael"],
 						_rsvpYes: ["NoBrainer", "sayWhat", "Bond007"]
 					}

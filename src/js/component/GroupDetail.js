@@ -12,6 +12,12 @@ export const GroupDetail = () => {
 	let a = actions.addEventById(id);
 	console.log(a);
 
+	let groupEvents = store.events.filter(event => {
+		return event.meta_keys._groupId == group.ID;
+	});
+
+	let content = groupEvents.map((events, index) => <CardEvent key={index} events={events} />);
+
 	return (
 		<div>
 			{/* This is a navbar with a picture, group title, location description */}
@@ -24,7 +30,7 @@ export const GroupDetail = () => {
 					</div>
 					<div className="col-5 " style={{ textAlign: "left", color: "white" }}>
 						<h2>{group.group_title}</h2>
-						<br></br>
+						<br />
 						<p>Location</p>
 						<h4>Miami, FL</h4>
 					</div>
@@ -32,10 +38,7 @@ export const GroupDetail = () => {
 			</nav>
 			<div className="container" style={{ textAlign: "center" }}>
 				<h3>Next Events</h3>
-				{a.map((events, index) => (
-					<CardEvent key={index} events={events} />
-					// <h1 key={index}>camilo</h1>
-				))}
+				<div>{content}</div>
 			</div>
 		</div>
 	);
